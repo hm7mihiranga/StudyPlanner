@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="tablet.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="main">
+            <h1 class="heading">Welcome.....</h1>
+        </div>
+        <div class="my">
+            <h1 class="headings">Click to Predict  <br>Your Final Exams Score</h1>
+        </div>
+        <div class="btn">
+            <button class="btn">
+                <a style="color:white" href="https://study-planner-2025.streamlit.app">Predict My Score</a>
+            </button>
+        </div>
+        <div id="chat-icon">
+    <a id="wa" href="main.html" target="_blank">
+        <img src="chat.png">
+    </a>
+</div>
+
+
+<div id="chatbot-container" class="hidden">
+    <div id="chat-header">Hello, How can I help you?</div>
+    <div id="chat-body">
+        <div id="chat-messages"></div>
+        <div style="display: flex; gap: 5px;">
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button id="send-btn">➤</button>
+        </div>
+    </div>
+</div>
+
+<script src="chatbot.js"></script>
+<script>
+
+    document.getElementById("wa").addEventListener("click", function(event) {
+        event.preventDefault(); 
+        var chatbot = document.getElementById("chatbot-container");
+        chatbot.classList.toggle("hidden"); // Toggle visibility of chatbot
+    });
+</script>
+        
+    </section>
+
+    <section id="about">
+        <h1 class="head2">About Us</h1>
+        <div class="row">
+            <div class="box">
+                <h1 class="heading">Hasitha Mihiranga</h1>
+                <p id="para">
+                    Finding dataset/ Making the tech stack/ ML model development/Deployment/ leading the group.
+                </p>
+            </div>
+            <div class="box">
+                <h1 class="heading">Thanura Karunathunga</h1>
+                <p id="para">
+                    Frontend design/ Chatbot design and engage with the preprocessing techniques.
+                </p>
+            </div>
+            <div class="box">
+                <h1 class="heading">Anagi Gunesekara</h1>
+                <p id="para">
+                    Make the presentation/ Help to deployment/ engage with the evaluation matrices.
+                </p>
+            </div>
+            <div class="box">
+                <h1 class="heading">OPLN De Silva</h1>
+                <p id="para">
+                    Help to frontend design and Engage with the Data cleaning part.
+                </p>
+            </div>
+            <div class="box">
+                <h1 class="heading">Bhanuka </h1>
+                <p id="para">
+                    Documentation and clearly make the Python Notebook/ Help to identify best model with using research papers.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="heading">---------------------</h1>
+        <h1 class="head">Contact Us</h1>
+        <form action="https://formspree.io/f/mlevqvlz" class="form" method="post">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name" required>
+            <input type="email" name="email" class="input" placeholder="Enter Your Email" required>
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message" required></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
+        <h1 class="heading">---------------------</h1>
+    </section>
+
+
+</body>
+</html>
