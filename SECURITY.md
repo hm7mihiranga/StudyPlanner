@@ -16,7 +16,7 @@ The following table lists the versions of this project currently supported with 
 We take security seriously. If you discover a vulnerability in this project, please follow the steps below:
 
 1. **Where to Report**:  
-   Please report vulnerabilities by sending an email to **[your-security-email@example.com]** or by opening a private issue on our GitHub repository.
+   Please report vulnerabilities by sending an email to hmgraphicworld@gmail.com by opening a private issue on our GitHub repository.
 
 2. **What to Include**:  
    - A clear and descriptive summary of the vulnerability  
